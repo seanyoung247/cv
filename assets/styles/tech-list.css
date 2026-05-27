@@ -1,0 +1,9 @@
+
+#technologies {
+    display: flex;
+    flex-direction: column;
+}
+
+.technology-group & > ul {
+    display: flex;
+}
