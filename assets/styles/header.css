@@ -1,0 +1,33 @@
+
+body > header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 5px solid var(--accent-color);
+    background-color: var(--alt-background);
+
+    & > * {
+        flex: 0 1 50%;
+        color: var(--text-accent);
+    }
+    & a {
+        color: var(--text-accent);
+    }
+}
+
+.tagline {
+    font-size: 1.5rem;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+.social-media {
+    display: flex;
+    justify-content: end;
+    gap: 2em;
+}
