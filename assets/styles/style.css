@@ -1,44 +1,21 @@
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+@import url(./vars.css);
+
+@import url(./reset.css);
+@import url(./base.css);
+
+@import url(./header.css);
+/* @import url(./tech-grid.css); */
+@import url(./tech-list.css);
+
+
+#summary > p {
+    font-size: 12px;
+    padding-top: 0.5em;
 }
 
-ul {
-    list-style: none;
-}
-
-:root {
-
-    --burgundy: #800020;
-    --crimson: #DC143C;
-
-    --text-color: black;
-    --background: white;
-    --accent-color: var(--crimson);
-}
-
-html {
-    width: 100%;
-    background-color: dimgray;
-}
-
-body {
-    background-color: white;
-    max-width: 210mm;
-    margin: auto;
-}
-
-section {
-    width: 100%;
-}
-
-
-
-#contact {
+#body-section {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    border: 1px solid var(--accent-color); 
+    flex-direction: column;
+    gap: 2rem;
 }
