@@ -1,0 +1,38 @@
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+
+    & > * { 
+        flex: 1 1 calc(50% - 2em);
+        &.project:last-of-type {
+            border-left: 1px solid #00000033;
+        }
+    }
+    & > h2, & > #ensojs { 
+        flex: 1 1 100%
+    }
+}
+
+.project {
+    padding: 0.5em;
+    & > header {
+        display: flex;
+        justify-content: space-between;
+
+        & > ul {
+            display: flex;
+            gap: 1em;
+        }
+    }
+    & > ul {
+        list-style: disc;
+        padding: 0.5em 1em;
+
+        /* & > :not(.required) {
+            display: none;
+        } */
+    }
+}
+
+
