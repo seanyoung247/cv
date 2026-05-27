@@ -1,0 +1,12 @@
+
+:root {
+
+    --burgundy: #800020;
+    --crimson: #DC143C;
+
+    --text-color: #111;
+    --background: #fff;
+    --alt-background: #f7f5f6;
+    --accent-color: var(--crimson);
+    --text-accent: var(--burgundy);
+}

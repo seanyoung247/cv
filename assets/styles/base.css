@@ -1,0 +1,54 @@
+
+html {
+    width: 100%;
+    font-size: 11px;
+    background-color: dimgray;
+}
+
+body {
+    font-family:
+        Inter,
+        "Segoe UI",
+        sans-serif;
+    background-color: white;
+    max-width: 210mm;
+    max-height: 297mm;
+    line-height: 1.45;
+    margin: auto;
+
+    & > * { padding: 1em 5em; }
+}
+
+section {
+    width: 100%;
+}
+
+address {
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: var(--text-color);
+}
+
+svg {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+h1 { font-size: 4.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+h2 {
+    border-bottom-left-radius: 12px;
+    border-left: 2px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+    color: var(--text-accent);
+    padding-left: 0.25em;
+}
