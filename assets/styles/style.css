@@ -5,17 +5,5 @@
 @import url(./base.css);
 
 @import url(./header.css);
-/* @import url(./tech-grid.css); */
-@import url(./tech-list.css);
-
-
-#summary > p {
-    font-size: 12px;
-    padding-top: 0.5em;
-}
-
-#body-section {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
+@import url(./tech/callout.css);
+@import url(./projects/main.css);

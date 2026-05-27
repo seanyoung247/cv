@@ -1,0 +1,22 @@
+
+#technologies {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+
+    padding: 0 2em 1em 0;
+    border-bottom-left-radius: 12px;
+    border-left: 2px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+
+    & > h2 {
+        border: none;
+    }
+}
+
+.technology-group {
+    border-left: 1px solid #00000033;
+    padding-left: 2%;
+    & > h3 { display: none; }
+}
