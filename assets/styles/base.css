@@ -1,6 +1,11 @@
 
 html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 100%;
+    min-height: 100dvh;
     font-size: 11px;
     background-color: dimgray;
 }
@@ -12,11 +17,11 @@ body {
         sans-serif;
     background-color: white;
     max-width: 210mm;
-    max-height: 297mm;
-    line-height: 1.45;
+    min-height: 297mm;
+    line-height: 1.5;
     margin: auto;
 
-    & > * { padding: 0.5em 5em; }
+    & > * { padding: 0.25em 5em; }
 }
 
 section {
@@ -25,10 +30,6 @@ section {
 
 address {
     font-style: normal;
-}
-
-ul {
-    list-style: none;
 }
 
 a {
