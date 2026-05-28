@@ -1,0 +1,30 @@
+#experience {
+    position: relative;
+    padding-right: 3rem;
+}
+
+#experience::after {
+    content: "";
+    position: absolute;
+    top: 4.5rem;
+    bottom: 1rem;
+    right: 1.5rem;
+    width: 4px;
+    background: var(--accent-color);
+    border-radius: 999px;
+}
+
+.experience-item {
+    position: relative;
+}
+
+.date-range {
+    position: absolute;
+    top: 0.25rem;
+    right: -2.5rem;
+    padding: 0.1em 0.6em;
+    border: 1px solid var(--text-color);
+    border-radius: 999px;
+    background: var(--background);
+    font-size: 0.85rem;
+}

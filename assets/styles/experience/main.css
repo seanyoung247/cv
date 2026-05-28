@@ -1,6 +1,14 @@
 
-/* #experience {
-} */
+#experience {
+    background:
+    linear-gradient(
+        90deg,
+        black 0%,
+        black 100%
+    )
+    right 2em top 5em / 10px calc(100% - 2em)
+    no-repeat;
+}
 
 .experience-item {
     padding: 0 2em;
@@ -8,12 +16,20 @@
     & > header {
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         & > .role-first {
             display: none;
         }
         & > .company-first {
             display: block;
+        }
+
+        & > .date-range {
+            border-radius: 999px;
+            border: 1px solid var(--text-color);
+            background: var(--background);
+            padding: 0 0.5em;
         }
     }
 }
