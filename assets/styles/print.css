@@ -1,4 +1,44 @@
 
-.optional {
-    display: none;
+@media print {
+
+    * {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    html {
+        background: white !important;
+    }
+
+    body {
+        /* line-height: 1.35; */
+        max-width: none;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    #body-section {
+        gap: 1.2rem;
+    }
+
+    h2,
+    h3 {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+    .project,
+    .experience-item,
+    .education-item {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    /* Hides optional items to keep to a single page */
+    .optional {
+        display: none;
+    }
+
 }
