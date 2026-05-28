@@ -1,0 +1,16 @@
+
+#education {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    & > h2 {
+        flex: 1 0 100%;
+    }
+}
+
+.education-item {
+    & > header {
+        text-align: center;
+    }
+}
