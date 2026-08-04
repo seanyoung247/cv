@@ -12,6 +12,10 @@
 
 #experience {
   position: relative;
+
+  & .optional {
+    display: none;
+  }
 }
 
 #experience::after {

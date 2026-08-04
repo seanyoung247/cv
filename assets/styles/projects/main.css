@@ -33,4 +33,7 @@
     }
 }
 
+#hackvent .optional {
+    display: none;
+}
 

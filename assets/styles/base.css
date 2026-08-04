@@ -17,7 +17,7 @@ body {
         sans-serif;
     background-color: white;
     max-width: 210mm;
-    min-height: 297mm;
+    height: 297mm;
     line-height: 1.5;
     margin: auto;
 
@@ -52,11 +52,6 @@ h2 {
     border-bottom: 1px solid var(--accent-color);
     color: var(--text-accent);
     padding-left: 0.25em;
-}
-
-#summary > p {
-    font-size: 12px;
-    padding-top: 0.5em;
 }
 
 #body-section {
