@@ -8,19 +8,20 @@
     "details": {
         "name": "Sean Young",
         "title": "Frontend and full-stack software engineer",
-        "location": "East Grinstead, UK",
-        "contact": {
-            "email": "seanyoung247@gmail.com",
-            "phone": "0747 508 1987",
-            "socials": [
-                { "name": "Github", "link": "https://github.com/seanyoung247" },
-                { "name": "LinkedIn", "link": "https://www.linkedin.com/in/sean-young-b4957819a" }
-            ]
-        },
-        "summary": "{title} specialising in modern JavaScript, developer tooling and open-source frameworks. Creator of EnsoJS, a lightweight reactive web component framework focused on declarative APIs and no-build-step workflows."
+        "location": "East Grinstead, UK"
     },
+    "contact": {
+        "email": "seanyoung247@gmail.com",
+        "phone": "0747 508 1987",
+        "socials": [
+            { "name": "Github", "link": "https://github.com/seanyoung247" },
+            { "name": "LinkedIn", "link": "https://www.linkedin.com/in/sean-young-b4957819a" }
+        ]
+    },
+    "summary": "{details.title} specialising in modern JavaScript, developer tooling and open-source frameworks. Creator of EnsoJS, a lightweight reactive web component framework focused on declarative APIs and no-build-step workflows.",
     "sections": [
         {
+            "id": "technologies",
             "type": "skills",
             "view": "columns",
             "title": "technologies",
@@ -63,6 +64,7 @@
             ]
         },
         {
+            "id": "selected-projects",
             "type": "projects",
             "view": "featured-grid",
             "title": "Selected Projects",
@@ -154,6 +156,7 @@
             ]
         },
         {
+            "id": "experience",
             "type": "experience",
             "view": "timeline",
             "title": "Professional Experience",
@@ -226,6 +229,7 @@
             ]
         },
         {
+            "id": "education",
             "type": "education",
             "title": "Education",
             "view": "hlist",
