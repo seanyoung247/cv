@@ -1,0 +1,62 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ cv.metadata.name }}</title>
+</head>
+
+<body>
+
+    <header>
+        <section id="details">
+            <h1>{{ cv.details.name }}</h1>
+            <p class="tagline">{{ cv.details.title }}</p>
+            <p class="location">{{ cv.details.location }}</p>
+        </section>
+        <address id="contact">
+            <ul class="contact">
+                <li>
+                    <a href="mailto:{{ cv.contact.email }}">
+                        {{ cv.contact.email }}
+                    </a>
+                </li>
+
+                <li>{{ cv.contact.phone }}</li>
+            </ul>
+            <ul class="social-media">
+                {% for social in cv.contact.socials %}
+                    <li>
+                        <a href="{{ social.link }}">
+                            {{ social.name }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </address>
+    </header>
+    <section id="summary">
+        <p>{{ cv.summary }}</p>
+    </section>
+
+    <main>
+        {% for section in cv.sections %}
+            {% if section.type == "skills" %}
+                {% include "sections/skills.html" %}
+
+            {% elif section.type == "projects" %}
+                {% include "sections/projects.html" %}
+
+            {% elif section.type == "experience" %}
+                {% include "sections/experience.html" %}
+
+            {% elif section.type == "education" %}
+                {% include "sections/education.html" %}
+            {% endif %}
+        {% endfor %}
+    </main>
+
+</body>
+</html>
