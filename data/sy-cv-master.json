@@ -1,0 +1,248 @@
+{
+    "metadata": {
+        "name": "Sean Young CV",
+        "author": "Sean Young",
+        "language": "en-GB",
+        "version": 1
+    },
+    "details": {
+        "name": "Sean Young",
+        "title": "Frontend and full-stack software engineer",
+        "location": "East Grinstead, UK",
+        "contact": {
+            "email": "seanyoung247@gmail.com",
+            "phone": "0747 508 1987",
+            "socials": [
+                { "name": "Github", "link": "https://github.com/seanyoung247" },
+                { "name": "LinkedIn", "link": "https://www.linkedin.com/in/sean-young-b4957819a" }
+            ]
+        },
+        "summary": "{title} specialising in modern JavaScript, developer tooling and open-source frameworks. Creator of EnsoJS, a lightweight reactive web component framework focused on declarative APIs and no-build-step workflows."
+    },
+    "sections": [
+        {
+            "type": "skills",
+            "view": "columns",
+            "title": "technologies",
+            "items": [
+                {
+                    "title": "Languages",
+                    "items": [
+                        { "text": "JavaScript / TypeScript" },
+                        { "text": "Python" },
+                        { "text": "HTML5 / CSS3" },
+                        { "text": "SQL" }
+                    ]
+                },
+                {
+                    "title": "Frontend",
+                    "items": [
+                        { "text": "React" },
+                        { "text": "Vue" },
+                        { "text": "Web Components" },
+                        { "text": "REST APIs" }
+                    ]
+                },
+                {
+                    "title": "Backend",
+                    "items": [
+                        { "text": "Flask" },
+                        { "text": "Django" },
+                        { "text": "Magento" }
+                    ]
+                },
+                {
+                    "title": "Tools and Platforms",
+                    "items": [
+                        { "text": "Docker" },
+                        { "text": "Cloudflare" },
+                        { "text": "Linux" },
+                        { "text": "Git / GitHub" }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "projects",
+            "view": "featured-grid",
+            "title": "Selected Projects",
+            "items": [
+                {
+                    "id": "ensojs",
+                    "name": "EnsoJS",
+                    "links": [
+                        {
+                            "name": "Docs",
+                            "link": "https://ensojs.dev"
+                        },
+                        {
+                            "name": "NPM",
+                            "link": "https://www.npmjs.com/package/ensojs"
+                        },
+                        {
+                            "name": "GitHub",
+                            "link": "https://github.com/seanyoung247/ensoJS"
+                        }
+                    ],
+                    "summary": "Designed and built an open-source reactive JavaScript framework from scratch.",
+                    "bullets": [
+                        {
+                            "text": "Designed and implemented a reactive JavaScript framework from first principles"
+                        },
+                        {
+                            "text": "Developed an extensible parser and plugin architecture for component behaviour and template processing"
+                        },
+                        {
+                            "text": "Built and packaged using modern tooling including Vite and ES modules",
+                            "exclude": ["short"]
+                        },
+                        {
+                            "text": "Designed for direct browser usage via CDN or ESM import without requiring a build pipeline"
+                        }
+                    ]
+                },
+                {
+                    "id": "hackvent",
+                    "name": "Hackvent Calendar",
+                    "links": [
+                        {
+                            "name": "Site",
+                            "link": "https://manni8436.github.io/hackvent-calendar"
+                        },
+                        {
+                            "name": "GitHub",
+                            "link": "https://github.com/manni8436/hackvent-calendar"
+                        }
+                    ],
+                    "summary": "Browser-based coding challenge platform developed during a collaborative hackathon project.",
+                    "bullets": [
+                        {
+                            "text": "Developed interactive frontend interface with syntax highlighting and in-browser code execution"
+                        },
+                        {
+                            "text": "Focused on creating accessible and engaging programming challenges for learners"
+                        },
+                        {
+                            "text": "Awarded first place in the Code Institute Happy Holidays Hackathon",
+                            "exclude": ["short"]
+                        }
+                    ]
+                },
+                {
+                    "id": "rangeit",
+                    "name": "RangeIt",
+                    "links": [
+                        {
+                            "name": "NPM",
+                            "link": "https://www.npmjs.com/package/rangeit"
+                        },
+                        {
+                            "name": "GitHub",
+                            "link": "https://github.com/seanyoung247/rangeit"
+                        }
+                    ],
+                    "summary": "Lightweight JavaScript utility package focused on iterable range generation and modular API design.",
+                    "bullets": [
+                        {
+                            "text": "Built using ES modules and published to NPM"
+                        },
+                        {
+                            "text": "Applied test-driven development using Jest"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "experience",
+            "view": "timeline",
+            "title": "Professional Experience",
+            "roleFirst": false,
+            "items": [
+                {
+                    "employer": "Stock in the Channel",
+                    "title": "Technical Support Engineer",
+                    "start": "2023-09",
+                    "end": "2026-08",
+                    "bullets": [
+                        {
+                            "text": "Developed and maintained HTML/CSS templates for customer quotations, sales orders and purchase orders, producing branded PDF and web output."
+                        },
+                        {
+                            "text": "Implemented JavaScript and PHP enhancements and bug fixes for Magento modules."
+                        },
+                        {
+                            "text": "Designed HTML/CSS layouts within the constraints of a custom document templating engine."
+                        },
+                        {
+                            "text": "Investigated Linux-hosted Magento platform issues, collaborating with developers and third-party vendors to resolve complex technical problems."
+                        }
+                    ]
+                },
+                {
+                    "employer": "ADHD UK",
+                    "title": "Volunteer Frontend Developer",
+                    "start": "2023",
+                    "end": "2024",
+                    "bullets": [
+                        {
+                            "text": "Developed React and TypeScript components for a production web platform focused on ADHD support and educational resources."
+                        },
+                        {
+                            "text": "Worked on dashboard functionality, frontend features and UI improvements.",
+                            "exclude": ["short"]
+                        },
+                        {
+                            "text": "Contributed to performance and usability improvements across the platform.",
+                            "exclude": ["short"]
+                        },
+                        {
+                            "text": "Collaborated remotely with other developers and contributors to deliver user-facing functionality."
+                        }
+                    ]
+                },
+                {
+                    "employer": "Fujitsu UK",
+                    "title": "Senior On-Site Technician",
+                    "start": "2004",
+                    "end": "2023",
+                    "bullets": [
+                        {
+                            "text": "Delivered technical support and systems troubleshooting across enterprise and government environments."
+                        },
+                        {
+                            "text": "Worked on large-scale IT deployment and migration projects within time-critical operational environments."
+                        },
+                        {
+                            "text": "Supported a wide range of hardware, software and networking systems across geographically distributed sites.",
+                            "exclude": ["short"]
+                        },
+                        {
+                            "text": "Collaborated with technical teams and stakeholders to resolve operational and infrastructure issues.",
+                            "exclude": ["short"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "education",
+            "title": "Education",
+            "view": "hlist",
+            "items": [
+                {
+                    "institution": "University of Lincoln",
+                    "title": "BSc Computer Science",
+                    "start": "2000",
+                    "end": "2003"
+                },
+                {
+                    "institution": "Code Institute",
+                    "title": "Diploma in Full Stack Software Development",
+                    "start": "2020",
+                    "end": "2021"
+                }
+            ]
+        }
+    ]
+}
