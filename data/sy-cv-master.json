@@ -24,7 +24,7 @@
             "id": "technologies",
             "type": "skills",
             "view": "columns",
-            "title": "technologies",
+            "title": "Technologies",
             "items": [
                 {
                     "title": "Languages",

@@ -43,18 +43,7 @@
 
     <main>
         {% for section in cv.sections %}
-            {% if section.type == "skills" %}
-                {% include "sections/skills.html" %}
-
-            {% elif section.type == "projects" %}
-                {% include "sections/projects.html" %}
-
-            {% elif section.type == "experience" %}
-                {% include "sections/experience.html" %}
-
-            {% elif section.type == "education" %}
-                {% include "sections/education.html" %}
-            {% endif %}
+            {% include "sections/" ~ section.type ~ ".html" %}
         {% endfor %}
     </main>
 

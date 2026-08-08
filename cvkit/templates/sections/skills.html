@@ -1,8 +1,18 @@
 
-<section id="{{ section.id|d(section.type) }}">
+{% from "views/columns.html" import render %}
 
+{% macro render_item(item) %}
+    <h3>{{ item.title }}</h3>
+
+    <ul>
+        {% for skill in item["items"] %}
+            <li>{{ skill.text }}</li>
+        {% endfor %}
+    </ul>
+{% endmacro %}
+
+<section id="{{ section.id|d(section.type) }}">
     <h2>{{ section.title }}</h2>
 
-
-
+    {{ render(section["items"], render_item) }}
 </section>
