@@ -1,12 +1,13 @@
 
+{% from "helpers.html" import parse_text %}
 {% from "views/columns.html" import render %}
 
 {% macro render_item(item) %}
-    <h3>{{ item.title }}</h3>
+    <h3>{{ parse_text(item.title) }}</h3>
 
     <ul>
         {% for skill in item["items"] %}
-            <li>{{ skill.text }}</li>
+            <li>{{ parse_text(skill.text) }}</li>
         {% endfor %}
     </ul>
 {% endmacro %}
