@@ -5,7 +5,7 @@ from . import parser
 
 
 blueprint = Blueprint(
-    "cvbuilder",
+    "cvkit",
     __name__,
     template_folder="templates",
 )
