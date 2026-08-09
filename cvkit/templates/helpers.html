@@ -1,6 +1,15 @@
 
 
-{% macro parse_text(value) %}
-    {{ value }}
+{% macro parse_value(value) %}
+    {{ parse_text(value, overrides, cv) }}
 {% endmacro %}
 
+{% macro insert_item(item, tag="p") %}
+    {% if is_visible(item, profile) %}
+        {% set parsed = parse_value(item.text) %}
+
+        {% if parsed %}
+            <{{ tag }}>{{ parsed }}</{{ tag }}>
+        {% endif %}
+    {% endif %}
+{% endmacro %}

@@ -1,19 +1,19 @@
 
-{% from "helpers.html" import parse_text %}
+{% from "helpers.html" import insert_item, parse_value with context %}
 {% from "views/columns.html" import render %}
 
 {% macro render_item(item) %}
-    <h3>{{ parse_text(item.title) }}</h3>
+    <h3>{{ parse_value(item.title) }}</h3>
 
     <ul>
         {% for skill in item["items"] %}
-            <li>{{ parse_text(skill.text) }}</li>
+            {{ insert_item(skill, "li") }}
         {% endfor %}
     </ul>
 {% endmacro %}
 
 <section id="{{ section.id|d(section.type) }}">
-    <h2>{{ section.title }}</h2>
+    <h2>{{ parse_value(section.title) }}</h2>
 
     {{ render(section["items"], render_item) }}
 </section>

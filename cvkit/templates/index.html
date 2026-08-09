@@ -1,5 +1,5 @@
 
-{% from "helpers.html" import parse_text %}
+{% from "helpers.html" import parse_value with context %}
 
 <!doctype html>
 <html lang="en">
@@ -14,25 +14,25 @@
 
     <header>
         <section id="details">
-            <h1>{{ parse_text(cv.details.name) }}</h1>
-            <p class="tagline">{{ parse_text(cv.details.title) }}</p>
-            <p class="location">{{ parse_text(cv.details.location) }}</p>
+            <h1>{{ parse_value(cv.details.name) }}</h1>
+            <p class="tagline">{{ parse_value(cv.details.title) }}</p>
+            <p class="location">{{ parse_value(cv.details.location) }}</p>
         </section>
         <address id="contact">
             <ul class="contact">
                 <li>
                     <a href="mailto:{{ cv.contact.email }}">
-                        {{ parse_text(cv.contact.email) }}
+                        {{ parse_value(cv.contact.email) }}
                     </a>
                 </li>
 
-                <li>{{ parse_text(cv.contact.phone) }}</li>
+                <li>{{ parse_value(cv.contact.phone) }}</li>
             </ul>
             <ul class="social-media">
                 {% for social in cv.contact.socials %}
                     <li>
                         <a href="{{ social.link }}">
-                            {{ parse_text(social.name) }}
+                            {{ parse_value(social.name) }}
                         </a>
                     </li>
                 {% endfor %}
@@ -40,7 +40,7 @@
         </address>
     </header>
     <section id="summary">
-        <p>{{ parse_text(cv.summary) }}</p>
+        <p>{{ parse_value(cv.summary) }}</p>
     </section>
 
     <main>
