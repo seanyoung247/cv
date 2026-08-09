@@ -29,6 +29,20 @@ def register_helpers(app):
 
 
     @app.template_global()
+    def get_snippet(group, name):
+        template = f"{group}/{name}.html"
+
+        try:
+            app.jinja_env.get_template(template)
+        except TemplateNotFound as exc:
+            raise RuntimeError(
+                f"CVKit template not found: {template}"
+            ) from exc
+        
+        return template
+
+
+    @app.template_global()
     def is_visible(item, profile):
         return profile not in item.get("exclude", [])
 

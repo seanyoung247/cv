@@ -1,6 +1,6 @@
 
 {% from "helpers.html" import insert_item, parse_value with context %}
-{% from "views/columns.html" import render %}
+{% from get_snippet("views", section.view) import render %}
 
 {% macro render_item(item) %}
     <h3>{{ parse_value(item.title) }}</h3>
