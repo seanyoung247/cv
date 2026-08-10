@@ -1,0 +1,29 @@
+
+{% from "helpers.html" import insert_item, parse_value with context %}
+{% from get_snippet("views", section.view) import render %}
+
+
+{% macro render_item(item) %}
+    <article id="{{ item.id }}">
+
+
+        <header>
+            <h3>{{ parse_value(item.name) }}</h3>
+
+            <ul>
+                {% for link in item.links %}
+                    <li>
+                        <a href="{{ link.link }}">{{ link.name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </header>
+    </article>
+
+{% endmacro %}
+
+<section id="{{ section.id|d(section.type) }}" class="{{ 'view-' ~ section.view }}">
+    <h2>{{ parse_value(section.title) }}</h2>
+
+    {{ render(section["items"], render_item) }}
+</section>

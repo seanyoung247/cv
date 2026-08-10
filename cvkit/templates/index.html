@@ -1,38 +1,36 @@
 
-{% from "helpers.html" import parse_value with context %}
-
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ cv.metadata.name }}</title>
+    <title>{{}}</title>
 </head>
 
 <body>
 
     <header>
         <section id="details">
-            <h1>{{ parse_value(cv.details.name) }}</h1>
-            <p class="tagline">{{ parse_value(cv.details.title) }}</p>
-            <p class="location">{{ parse_value(cv.details.location) }}</p>
+            <h1>{{}}</h1>
+            <p class="tagline">{{}}</p>
+            <p class="location">{{}}</p>
         </section>
         <address id="contact">
             <ul class="contact">
                 <li>
-                    <a href="mailto:{{ cv.contact.email }}">
-                        {{ parse_value(cv.contact.email) }}
+                    <a href="mailto:{{}}">
+                       {{}}
                     </a>
                 </li>
 
-                <li>{{ parse_value(cv.contact.phone) }}</li>
+                <li>{{}}</li>
             </ul>
             <ul class="social-media">
-                {% for social in cv.contact.socials %}
+                {% for social in  %}
                     <li>
-                        <a href="{{ social.link }}">
-                            {{ parse_value(social.name) }}
+                        <a href="">
+                            
                         </a>
                     </li>
                 {% endfor %}
@@ -40,12 +38,12 @@
         </address>
     </header>
     <section id="summary">
-        <p>{{ parse_value(cv.summary) }}</p>
+        <p>{{}}</p>
     </section>
 
     <main>
-        {% for section in cv.sections %}
-            {% include "sections/" ~ section.type ~ ".html" %}
+        {% for section in  %}
+            {%  %}
         {% endfor %}
     </main>
 

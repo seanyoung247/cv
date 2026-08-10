@@ -1,0 +1,7 @@
+{% macro render(items, render_item) %}
+    {% for item in items %}
+        <div class="view-column">
+            {{ render_item(item) }}
+        </div>
+    {% endfor %}
+{% endmacro %}

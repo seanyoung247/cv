@@ -1,0 +1,53 @@
+
+{% from "helpers.html" import parse_value with context %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ cv.metadata.name }}</title>
+</head>
+
+<body>
+
+    <header>
+        <section id="details">
+            <h1>{{ parse_value(cv.details.name) }}</h1>
+            <p class="tagline">{{ parse_value(cv.details.title) }}</p>
+            <p class="location">{{ parse_value(cv.details.location) }}</p>
+        </section>
+        <address id="contact">
+            <ul class="contact">
+                <li>
+                    <a href="mailto:{{ cv.contact.email }}">
+                        {{ parse_value(cv.contact.email) }}
+                    </a>
+                </li>
+
+                <li>{{ parse_value(cv.contact.phone) }}</li>
+            </ul>
+            <ul class="social-media">
+                {% for social in cv.contact.socials %}
+                    <li>
+                        <a href="{{ social.link }}">
+                            {{ parse_value(social.name) }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </address>
+    </header>
+    <section id="summary">
+        <p>{{ parse_value(cv.summary) }}</p>
+    </section>
+
+    <main>
+        {% for section in cv.sections %}
+            {% include get_snippet("sections", section.type) %}
+        {% endfor %}
+    </main>
+
+</body>
+</html>

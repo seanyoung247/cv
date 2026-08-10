@@ -96,7 +96,7 @@
                         },
                         {
                             "text": "Built and packaged using modern tooling including Vite and ES modules",
-                            "exclude": ["short"]
+                            "exclude": ["test"]
                         },
                         {
                             "text": "Designed for direct browser usage via CDN or ESM import without requiring a build pipeline"
@@ -126,7 +126,7 @@
                         },
                         {
                             "text": "Awarded first place in the Code Institute Happy Holidays Hackathon",
-                            "exclude": ["short"]
+                            "exclude": ["test"]
                         }
                     ]
                 },
@@ -193,11 +193,11 @@
                         },
                         {
                             "text": "Worked on dashboard functionality, frontend features and UI improvements.",
-                            "exclude": ["short"]
+                            "exclude": ["test"]
                         },
                         {
                             "text": "Contributed to performance and usability improvements across the platform.",
-                            "exclude": ["short"]
+                            "exclude": ["test"]
                         },
                         {
                             "text": "Collaborated remotely with other developers and contributors to deliver user-facing functionality."
@@ -218,11 +218,11 @@
                         },
                         {
                             "text": "Supported a wide range of hardware, software and networking systems across geographically distributed sites.",
-                            "exclude": ["short"]
+                            "exclude": ["test"]
                         },
                         {
                             "text": "Collaborated with technical teams and stakeholders to resolve operational and infrastructure issues.",
-                            "exclude": ["short"]
+                            "exclude": ["test"]
                         }
                     ]
                 }
@@ -248,5 +248,12 @@
                 }
             ]
         }
-    ]
+    ],
+    "profiles": {
+        "test": {
+            "details": {
+                "title": "Frontend software engineer"
+            }
+        }
+    }
 }

@@ -12,7 +12,7 @@
     </ul>
 {% endmacro %}
 
-<section id="{{ section.id|d(section.type) }}">
+<section id="{{ section.id|d(section.type) }}" class="{{ 'view-' ~ section.view }}">
     <h2>{{ parse_value(section.title) }}</h2>
 
     {{ render(section["items"], render_item) }}
